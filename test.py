@@ -15,7 +15,7 @@ def main():
         "output_format": "json"
         }
     }
-    response = requests.post('http://172.31.216.26/ins',data=json.dumps(payload), headers=myheaders,auth=('admin','Insieme123')).json()
+    response = requests.post('http://172.31.216.26/ins',data=json.dumps(payload), headers=myheaders,auth=(username,password)).json()
         pprint.pprint(response)
     
         
